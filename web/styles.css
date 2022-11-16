@@ -4,7 +4,7 @@ body {
   font-size: large;
   font-family: monospace;
   margin: 0;
-  width: 1200px;
+  width: 200em;
 }
 
 h1 {
@@ -51,7 +51,7 @@ header {
 section {
   margin: 0 auto;
   padding: 1rem;
-  max-width: 90em;
+  max-width: 200em;
 }
 
 button {
