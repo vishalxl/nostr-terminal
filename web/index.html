@@ -100,9 +100,6 @@
         emitter.on('buff', data => data.split('').forEach(c => keyBuffer(c)))
         xterm.onData(data => dataHandler(data))
 
-        xterm.on('paste', function(data) {
-		  	 dataHandler(data);
-        });
       }
 
       function toggleMode() {
