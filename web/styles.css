@@ -52,6 +52,7 @@ section {
   margin: 0 auto;
   padding: 1rem;
   max-width: 200em;
+  min-width: 200em;
 }
 
 button {
