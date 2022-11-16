@@ -66,9 +66,9 @@
       const ec = new TextEncoder()
       const emitter = new NostrEmitter()
       const { decodeShareLink } = NostrEmitter.utils
-      const xterm = new Terminal({ cursorBlink: true , cols: 120, rows: 40})
+      const xterm = new Terminal({ cursorBlink: true , cols: 150, rows: 40})
 
-      xterm.resize( 120, 40)
+      xterm.resize( 150, 40)
 
       async function connect() {
         const sharelink = connectInput.value
