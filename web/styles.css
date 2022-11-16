@@ -147,6 +147,7 @@ button:active {
   border: 1px solid #8b8b8b86;
   display: flex;
   flex-direction: column;
+  width: 1000px
 }
 
 :root {
