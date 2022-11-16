@@ -66,9 +66,10 @@
       const ec = new TextEncoder()
       const emitter = new NostrEmitter()
       const { decodeShareLink } = NostrEmitter.utils
-      const xterm = new Terminal({ cursorBlink: true , cols: 150, rows: 40})
+      const xterm = new Terminal({ cursorBlink: true , cols: 200, rows: 40})
 
-      xterm.resize( 150, 40)
+      xterm.resize( 200, 40)
+
 
       async function connect() {
         const sharelink = connectInput.value
@@ -98,6 +99,10 @@
         })
         emitter.on('buff', data => data.split('').forEach(c => keyBuffer(c)))
         xterm.onData(data => dataHandler(data))
+
+        xterm.on('paste', function(data) {
+		  	 dataHandler(data);
+        });
       }
 
       function toggleMode() {
