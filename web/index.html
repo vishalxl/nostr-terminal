@@ -68,7 +68,7 @@
       const { decodeShareLink } = NostrEmitter.utils
       const xterm = new Terminal({ cursorBlink: true })
 
-      xterm.resize(80, 30)
+      xterm.resize(120, 40)
 
       async function connect() {
         const sharelink = connectInput.value
